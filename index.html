@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simon</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1 id="level-title">Press A Key to Start</h1>
+    <!-- An entire container -->
+    <div class="container">
+      <!-- A container for the scores -->
+      <div class="score-container">
+        <!-- A containter for the high score -->
+        <div class="high-score">
+          <h6 class="score-title">Highest Score</h6>
+          <h5 class="score-title score-number">0</h5>
+        </div>
+        <!-- A container for the current score -->
+        <div class="current-score">
+          <h6 class="score-title">Current Score</h6>
+          <h5 class="score-title score-number">0</h5>
+        </div>
+        <!-- Instructions -->
+        <p class="score-title">
+          Click on the squares or press keys R (red), G (green), B (blue), Y
+          (yellow)
+        </p>
+      </div>
+
+      <!-- The first row container -->
+      <div class="row">
+        <div type="button" id="green" class="btn green"></div>
+
+        <div type="button" id="red" class="btn red"></div>
+      </div>
+      <!-- The second row container -->
+      <div class="row">
+        <div type="button" id="yellow" class="btn yellow"></div>
+        <div type="button" id="blue" class="btn blue"></div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- JavaScript file -->
+    <script src="game.js" charset="utf-8"></script>
+  </body>
+</html>
